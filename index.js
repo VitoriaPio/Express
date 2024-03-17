@@ -48,6 +48,10 @@ const laboratorios = [
   },
 ];
 
+app.get("/", (req, res) => {
+  res.json({message: 'Servidor funcionando!'})
+})
+
 app.get("/laboratorio/todos", (req, res) => {
   res.json(laboratorios);
 });
