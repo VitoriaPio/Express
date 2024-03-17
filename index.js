@@ -1,7 +1,6 @@
 import bodyParser from "body-parser";
 import express from "express";
 import BuildPdf from "./services/build-pdf.js";
-import checkHour from './services/check-hour.js';
 
 // server config
 const app = express();
@@ -12,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // middleware para restrição de horário
-app.use(checkHour)
+// app.use(checkHour)
 
 
 const laboratorios = [
