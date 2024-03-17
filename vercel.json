@@ -1,5 +1,9 @@
 {
     "version":2,
-    "rewrites":[{"souce":"/(.*)",
-    "destination":"/"}]
+    "routes":[
+        {
+        "src": "/(.*),
+        "dest": "/"
+        }
+    ]
 }
